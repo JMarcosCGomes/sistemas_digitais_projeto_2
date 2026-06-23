@@ -6,7 +6,7 @@ entity main is
     port (
         clk, reset: in std_logic;
         ps2d, ps2c: in std_logic;
-        led_out out std_logic
+        led_out: out std_logic_vector(7 downto 0)
     );
 end main;
 
@@ -33,4 +33,4 @@ architecture arch of main is
         -- using led_out as an example
         led_out <= ascii_code;
 
-end arch
+end arch;
